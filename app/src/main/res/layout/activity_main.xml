@@ -7,28 +7,39 @@
     tools:context=".MainActivity"
     android:id="@+id/cons">
 
-    <androidx.drawerlayout.widget.DrawerLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/drawer"
-    tools:context=".MainActivity"
-    android:fitsSystemWindows="true"
-    tools:openDrawer="left"
-    >
+    <Switch
+        android:id="@+id/switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change theme"
+        />
 
-        <include
+    <androidx.drawerlayout.widget.DrawerLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/nav_drawer"
-        layout="@layout/appbar"/>
+        android:id="@+id/drawer"
+        tools:context=".MainActivity"
+        android:fitsSystemWindows="false"
+        tools:openDrawer="left"
+        android:layout_marginTop="30dp"
+        >
+
+
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/nav_drawer"
+            layout="@layout/appbar"/>
 
         <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <include
-            android:id="@+id/toolbar"
-            layout="@layout/toolbar"/>
-    </ScrollView>
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar"/>
+        </ScrollView>
+
 
         <FrameLayout
             android:id="@+id/frame_layout"
@@ -46,7 +57,7 @@
             >
 
         </com.google.android.material.navigation.NavigationView>
-        </androidx.drawerlayout.widget.DrawerLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"

@@ -3,12 +3,17 @@ package com.example.assignment4;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.FrameLayout;
+import android.widget.Switch;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -22,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     FrameLayout frameLayout;
+    Switch switcher;
+    boolean nightMODE;
+    SharedPreferences sp;
+    SharedPreferences.Editor editor;
 
 
 
@@ -39,6 +48,36 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,p3).commit();
+
+
+        switcher = findViewById(R.id.switcher);
+        sp = getSharedPreferences("MODE", Context.MODE_PRIVATE);
+        nightMODE = sp.getBoolean("night", false);
+
+        if(nightMODE){
+            switcher.setChecked(true);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+        }
+
+        switcher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                if(nightMODE){
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+                    editor = sp.edit();
+                    editor.putBoolean("night", false);
+                }else{
+                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    editor = sp.edit();
+                    editor.putBoolean("night", true);
+                }
+                editor.apply();
+            }
+        });
+
+
+
 
 
         toolbar = findViewById(R.id.toolbar);
