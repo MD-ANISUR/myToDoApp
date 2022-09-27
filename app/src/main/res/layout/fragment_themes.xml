@@ -3,20 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".themes"
+    tools:context=".MainActivity"
     >
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Change your themes"
+        android:text="To change theme please look right corner switch, There was a problem to implement here."
+        android:textColor="#F41403"
+        android:textStyle="bold"
 
         android:layout_marginTop="100dp"/>
-    <Switch
-        android:id="@+id/switcher"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"/>
+
+
 
 </FrameLayout>
