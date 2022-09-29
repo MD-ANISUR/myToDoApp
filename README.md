@@ -1,6 +1,14 @@
 # NoteTaker
-Its a to-do note taking app
-You will find 4 different screeens including..
+Its a to-do note taking app. You will find 4 different screeens like add task input page, see added tasks, see all the pending tasks and also see all the completed tasks. If a task is completed then user will get a notification. Also, user will be able to delete his completed tasks.
+### Components used:
+  - Fragments on Add tasks, My tasks, Pending tasks, Completed tasks.
+  - Bottom Navigation Bar.
+  - Shared Preferences on input page and theme page.
+  - Menu bar.
+  - Recycler View to show the tasks.
+  - SQlite for storing data.
+  - Notification.
+  
 ## Input Task page
   Here you will be able to add new task.
 ## Add task
