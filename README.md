@@ -8,6 +8,7 @@ Its a to-do note taking app. You will find 4 different screeens like add task in
   - Recycler View to show the tasks.
   - SQlite for storing data.
   - Notification.
+  - Themes (Light and Night).
   
 ## Input Task page
   Here you will be able to add new task.
