@@ -12,6 +12,7 @@ Its a to-do note taking app. You will find 4 different screeens like add task in
   
 ## Input Task page
   Here you will be able to add new task.
+  <img src="images/input.JPG" alt="Add Task Fragment" style="width:200px;"/>
 ## Add task
   You will see all of your added tasks.
 ## Pending Task page
