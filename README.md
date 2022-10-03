@@ -11,17 +11,17 @@ Its a to-do note taking app. You will find 4 different screeens like add task in
   - Themes (Light and Night).
   
 ## Input Task page
-  ------------------------------------------------Here you will be able to add new task.------------------------------------------------------------
+  ------------------------------------------------Here you will be able to add new task.-------------------------------------------
     <img src="images/input.jpg" alt="Input Task Fragment" style="width:200px;"/>
 
   
   
 ## My task
-  -------------------------------------------------You will see all of your added------------------------------------------------------------------
+  -------------------------------------------------You will see all of your added---------------------------------------------------
     <img src="images/mytask.jpg" alt="My Task Fragment" style="width:200px;"/>
   
 ## Pending Task page
- ---------------------------- Here you will be able to see all the pending tasks.------------------------------------------------------------------
+ ---------------------------- Here you will be able to see all the pending tasks.---------------------------------------------------
     <img src="images/pendingtask.jpg" alt="Pending Task Fragment" style="width:200px;"/>
   
 ## Completed Task page
@@ -29,19 +29,19 @@ Its a to-do note taking app. You will find 4 different screeens like add task in
   If you want to delete any task then swipe right will delete the task.
     <img src="images/completedtask.jpg" alt="Completed Task Fragment" style="width:200px;"/>
 ## Theme
-  ----------------------------You have two theme changing options(Night and Light)------------------------------------------------------------------
+  ----------------------------You have two theme changing options(Night and Light)--------------------------------------------------
     <img src="images/theme.jpg" alt="Night Mode theme" style="width:200px;"/>
     <img src="images/input.jpg" alt="Light mode theme" style="width:200px;"/>
   
 ## MenuBar
-  -----------------------------Here we have 3 different fragments inclusing help, about us, themes.--------------------------------------------------
+  -----------------------------Here we have 3 different fragments inclusing help, about us, themes.--------------------------------
     <img src="images/menubar.jpg" alt="My Task Fragment" style="width:200px;"/>
     
 ## Help Page
-  --------------------------------------------------Here you see the help page.---------------------------------------------------------------------
+  --------------------------------------------------Here you see the help page.----------------------------------------------------
     <img src="images/help.jpg" alt="Help Page" style="width:200px;"/>
 ## About Page
-  ------------------------------------------------Here you see the developer details.---------------------------------------------------------------
+  ------------------------------------------------Here you see the developer details.----------------------------------------------
     <img src="images/aboutus.jpg" alt="About us page" style="width:200px;"/>
 ## Shared preference
   Shared preference has been used in the theme section and input task section.
