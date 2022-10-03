@@ -38,10 +38,10 @@ Its a to-do note taking app. You will find 4 different screeens like add task in
     <img src="images/menubar.jpg" alt="My Task Fragment" style="width:200px;"/>
     
 ## Help Page
-  --------------------------------Here we have 3 different fragments inclusing help, about us, themes.-----------------------------------------------
+  --------------------------------------------------Here you see the help page.---------------------------------------------------------------------
     <img src="images/help.jpg" alt="Help Page" style="width:200px;"/>
 ## About Page
-  -------------------------------Here we have 3 different fragments inclusing help, about us, themes.------------------------------------------------
+  ------------------------------------------------Here you see the developer details.---------------------------------------------------------------
     <img src="images/aboutus.jpg" alt="About us page" style="width:200px;"/>
 ## Shared preference
   Shared preference has been used in the theme section and input task section.
